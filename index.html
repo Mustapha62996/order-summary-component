@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  
+    <title>Frontend Mentor | Order summary card</title>
+
+    <style>
+      body{
+        background: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        height: 100vh;
+        background-color: hsl(225, 100%, 94%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Red Hat Display', sans-serif;
+      }
+      main{
+        width: 300px;
+        box-shadow: 5px 5px 6px hsl(224, 23%, 80%);
+        border-radius: 15px;
+        text-align: center;
+        background-color: white;
+      }
+      main img{
+        width: 300px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+      }
+      main h1{
+        color: hsl(223, 47%, 23%);
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+      }
+      main p{
+        color: hsl(224, 23%, 55%);
+        font-size: 16px;
+        padding: 15px;
+        font-family: 'Red Hat Display', sans-serif;
+      }
+      section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 20px;
+        background-color: hsl(225, 100%, 98%);
+        padding: 10px;
+        font-family: 'Red Hat Display', sans-serif;
+      }
+      section img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: -40px;
+      }
+      section #annual-price{
+        display: flex;
+        flex-direction: column;
+      }
+      #plan{
+        color: hsl(223, 47%, 23%);
+        font-weight: bold;
+        padding: 3px 0;
+      }
+      #amount{
+        color: hsl(224, 23%, 55%);
+      }
+      main button{
+        padding: 12px 55px;
+        margin: 10px 0;
+        border: 0;
+        box-shadow: 5px 8px 5px hsl(225, 100%, 94%);
+        border-radius: 5px;
+        background-color: hsl(245, 75%, 52%);
+        color: hsl(225, 100%, 98%);
+        cursor: pointer;
+        font-family: 'Red Hat Display', sans-serif;
+      }
+      main button:hover{
+        background-color: hsl(245, 75%, 72%);
+      }
+      #cancel{
+        color: hsl(224, 23%, 55%);
+        text-decoration: none;
+        display: block;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        font-family: 'Red Hat Display', sans-serif;
+      }
+      #cancel:hover{
+        color: hsl(223, 47%, 23%);
+      }
+      #change:hover{
+        text-decoration: none;
+        cursor: pointer;
+        color: hsl(245, 75%, 72%);
+      }
+      @media screen and (max-width: 375px){
+        body{
+        background: url(./images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-color: hsl(225, 100%, 94%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <main>
+      <img src="./images/illustration-hero.svg" alt="listening-to-music-image" />
+      <h1>Order Summary</h1>
+
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!</p>
+
+      <section>
+        <img src="./images/icon-music.svg" alt="music icon">
+        <div id="annual-price">
+          <span id="plan">Annual Plan</span>
+          <span id="amount">$59.99/year</span>
+        </div>
+        <a href="#" id="change">Change</a>
+      </section>
+
+      <button type="submit">Proceed to Payment</button><br>
+
+      <a href="#" id="cancel">Cancel Order</a>
+  
+    </main>
+  </body>
+</html>
